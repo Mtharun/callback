@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        div{
+            width: 50%;
+            height: 50vh;
+            margin-top: 25px;
+            background-color: dodgerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="display"></div>
+    <script>
+        let timer = 10;
+        let time = document.getElementById('display');
+        time.style.fontSize="100px";
+        time.style.color = "black";
+        time.style.textAlign ="center";
+        setTimeout(()=>{
+            time.innerHTML = timer--;
+            setTimeout(()=>{
+                time.innerHTML = timer--;
+                    setTimeout(()=>{
+                    time.innerHTML = timer--;
+                    setTimeout(()=>{
+                        time.innerHTML = timer--;
+                        setTimeout(()=>{
+                            time.innerHTML = timer--;
+                            setTimeout(()=>{
+                               time.innerHTML = timer--;
+                               setTimeout(()=>{
+                                    time.innerHTML = timer--;
+                                    setTimeout(()=>{
+                                          time.innerHTML = timer--;
+                                          setTimeout(()=>{
+                                            time.innerHTML = timer--;
+                                            setTimeout(()=>{
+                                                time.innerHTML = timer--;
+                                                setTimeout(()=>{
+                                                    time.style.fontSize="80px"
+                                                    time.innerHTML = "HAPPY INDEPENDENCE DAY";
+
+                                                })
+                                            },1000)
+                                        },1000)
+                                    },1000)
+                            },1000)
+                        },1000)
+                    },1000)
+                 },1000)
+                },1000)
+            },1000)
+        },1000)
+    </script>
+</body>
+</html>
